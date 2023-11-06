@@ -14,6 +14,9 @@ export default function Shuffle() {
         axios.get(apiUrl)
         .then(response => {
           setData(response.data);
+        })
+        .catch((error) => {
+            alert('error');
         })    
       }, []);
 
@@ -30,6 +33,7 @@ export default function Shuffle() {
           .catch((error) => {
             // 오류 처리
             console.error('데이터를 가져오는 중 오류 발생:', error);
+            alert('error');
             setIsLoading(false);
           });
       };
