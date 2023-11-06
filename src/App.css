@@ -44,7 +44,6 @@
 } */
 .App-btn {
   cursor: pointer;
-  font-size: 10vh;
   border-radius: 100%;
   width: 40vh;
   height: 40vh;
@@ -55,11 +54,15 @@
   color: white;
   box-shadow: 2px 2px 2px hsla(0, 0%, 50%, 0.5);
   text-shadow: 2px 2px 2px hsla(0, 0%, 50%, 0.5);
+  font-family: "Gasoek One", sans-serif;
 }
 .App-btn:hover {
-  background-color: red;
+  background-color: rgb(193, 0, 0);
+  cursor: pointer;
+  .App-btn-img {
+    content: url(./images/rice_bowl.svg);
+  }
 }
-
 .App-map {
   display: flex;
   align-items: center;

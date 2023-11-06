@@ -1,0 +1,40 @@
+body {
+  margin: 20px;
+}
+
+.alignCenter {
+  display: flex;
+  margin-top: 20px;
+}
+.backButtonStyled {
+  text-decoration: none;
+  font-size: 21px;
+  color: black;
+  font-weight: 700;
+}
+.placeImageStyled {
+  width: 50vw;
+  /* height: 40vh; */
+  border: 3px solid black;
+  margin: 0 auto;
+}
+.placeNameStyled {
+  text-align: center;
+}
+.shuffleButtonStyled {
+  display: grid;
+  margin: auto;
+  border-radius: 30px;
+  width: 150px;
+  height: 45px;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #ffcd4e;
+  border: none;
+}
+.shuffleButtonStyled:hover {
+  cursor: pointer;
+  background-color: #111111;
+}
