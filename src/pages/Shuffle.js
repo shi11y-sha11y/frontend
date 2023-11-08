@@ -4,12 +4,15 @@ import { useState, useEffect } from "react";
 import siyoung from "../images/siyoung.png";
 import "./shuffle.css";
 
+const baseUrl = 'http://192.168.101.184:8080';
+
 export default function Shuffle() {
     const [data, setData] = useState([[]]);
     const [isLoading, setIsLoading] = useState(false);
 
     // 데이터를 가져오는 요청을 보낼 URL을 지정합니다.
-    const apiUrl = 'http://192.168.0.18:8080/api/v1/restaurants/random?size=1';
+    
+    const apiUrl = `${baseUrl}/api/v1/restaurants/random?size=1`;
     useEffect(() => {    
         axios.get(apiUrl)
         .then(response => {
