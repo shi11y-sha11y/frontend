@@ -1,19 +1,25 @@
 .App {
+  display: flex;
   text-align: center;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  width: 30vh;
   pointer-events: none;
+  margin-top: 10vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -35,4 +41,41 @@
   to {
     transform: rotate(360deg);
   }
+} */
+.App-btn {
+  cursor: pointer;
+  border-radius: 100%;
+  width: 40vh;
+  height: 40vh;
+  margin: 2vh 0;
+  padding: 0;
+  border-style: none;
+  background-color: #ffd15b;
+  color: white;
+  box-shadow: 2px 2px 2px hsla(0, 0%, 50%, 0.5);
+  text-shadow: 2px 2px 2px hsla(0, 0%, 50%, 0.5);
+  font-family: "Gasoek One", sans-serif;
+}
+.App-btn:hover {
+  background-color: rgb(193, 0, 0);
+  cursor: pointer;
+  .App-btn-img {
+    content: url(./images/rice_bowl.svg);
+  }
+}
+.App-map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10vh;
+}
+.App-ping {
+  height: 4vh;
+}
+.App-address {
+  font-size: 4vh;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  color: black;
+  margin-left: 0.5rem;
 }
